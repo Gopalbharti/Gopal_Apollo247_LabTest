@@ -2,30 +2,35 @@
 Project structure:
 
 src/main/java:
-	com.base:
-		Base.java
-		BaseLoginLogout.java
+	com.config:
+		config.properties
 		
 	com.pages:
-		RegistrationPage.java
-		LoginPage.java
-		HomePage.java
-		OpenNewAccountPage.java
+		LabTest.java
+		LandingPage.java
+		TopBookedTestPage.java
+		
+	com.testdata
+	    testdata.xlsx		
 			
 	com.utility:
 		Config.java
+		ConfigReader.java
+		ExcelReader.java
+		ExtentReporterManager.java
 		Utility.java
 		
 src/test/java:
 	com.tests:
-		RegistrationPageTest.java
-		LoginPageTest.java
-		HomePageTest.java
+		LabTest.java
+		LandingPage.java
+		TopBookedTestPage.java
 		
 src/main/resources:
 	ReadMe
 						
 src/test/resources:
+    features
 	testng.xml	
 
 drivers folder:
@@ -33,6 +38,13 @@ drivers folder:
 	
 screenshots folder:
 	file.png	
+	
+cucumber-report	:
+	cucumber
+	cucumber.json
+	cucumber.xml
+	
+	
 	
 pom.xml			
 --------------------------------------------------------------------------------------------------

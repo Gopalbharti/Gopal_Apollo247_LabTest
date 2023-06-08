@@ -23,7 +23,7 @@ public static WebDriver driver;
 	public static String url = "https://www.apollo247.com/";
 	
 	public static long PAGE_LOAD_TIMEOUT = 10;
-	public static long IMPLICIT_WAIT = 15;
+	public static long IMPLICIT_WAIT = 10;
 	
 	
 

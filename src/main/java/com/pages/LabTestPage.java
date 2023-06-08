@@ -9,13 +9,9 @@ import com.utility.Utility;
 
 public class LabTestPage extends Utility {
 	
-	   // x-Path for View All button
-		@FindBy(xpath = "//*[text()='View All']")
+	   // x-Path for View All 
+		@FindBy(xpath = "(//*[text()='View All'])[2]")
 		WebElement ViewAll;
-
-		// X-path closing the notification
-		@FindBy(xpath = "//*[@id='wzrk-cancel']")
-		private WebElement notification_close;
 		
 		//X-path for Searchbar
 		@FindBy(xpath = "//input[@placeholder='Search test and packages']")
@@ -35,34 +31,35 @@ public class LabTestPage extends Utility {
 		}
 		
 		// return the title 
-		
 		public String validateLabTestPageTitle() {
 			return driver.getTitle();
 		}
 		
-		//Passing the value
-		
-		public void searchText(String un) {
-			search.sendKeys(un);
-		}
-		
 		//Method for checking button is displayed
-		
 		public boolean checkIsDisplay() throws IOException {
 			
 			return ViewAll.isDisplayed();
 		}
 		
-
-		
+		//Page chaining
 		public TopBookedTestPage TopBookedTestPageNavigation() throws IOException
 		{
 			ViewAll.click();
 			return new TopBookedTestPage(); 
 		}
 		
-		//Method for capturing the text
+		//Passing the value
+		public void searchText(String un) {
+		  search.sendKeys(un);
+			}
 		
+		
+		public boolean logoDisplayed()
+		{	
+			return logo.isDisplayed();
+		}
+		
+		//Method for capturing the text
 		public String textCapture()
 		{
 			return textElement.getText();

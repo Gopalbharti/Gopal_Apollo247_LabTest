@@ -58,12 +58,12 @@ public class LabTestPage1 extends Utility {
 
 		try {
 			assertEquals(actualtitle, expectedtitle);
-			logger.log(Status.PASS, "Step1 is passed");
+			logger.log(Status.PASS, "Step2 is passed");
 			System.out.println(actualtitle);
 			assert true;
 		} catch (AssertionError e) {
 			e.printStackTrace();
-			logger.log(Status.FAIL, "Step1 is failed");
+			logger.log(Status.FAIL, "Step2 is failed");
 			captureScreenshotOnFailure();
 			assert false;
 		}
@@ -76,7 +76,7 @@ public class LabTestPage1 extends Utility {
    public void user_click_on_lab_tests_link() throws IOException, InterruptedException {
 	  
 	   objectMethod();
-	   Utility.pageLoad();
+	   Thread.sleep(3000);
        ldp.LabTestsPageNavigation();
       // Utility.implicitWait();
        logger.log(Status.INFO, "Step3 is executed");
@@ -88,7 +88,7 @@ public class LabTestPage1 extends Utility {
  		
  		objectMethod();
 		Thread.sleep(4000);
-		
+		assertTrue(ltp.logoDisplayed());
 		String actualtitle = ltp.validateLabTestPageTitle();
 		String expectedtitle = "Book Lab Tests at Home from Apollo Diagnostics, Pathology Labs near me";
 
@@ -158,7 +158,7 @@ public class LabTestPage1 extends Utility {
 	public void user_navigate_on_book_test_page() throws InterruptedException, IOException {
 		
 		objectMethod();
-		Thread.sleep(4000);
+		Thread.sleep(5000);
 		String actualtitle = tbtp.validateTopBookTitle();
 		String expectedtitle = "Top Tests to Manage Your Health at the Best Prices from Apollo 24|7"; 
 		try {
@@ -179,18 +179,18 @@ public class LabTestPage1 extends Utility {
 		
 	    
 	}
-	@Then("User click on the category section")
+	@When("User click on the category section")
 	public void user_click_on_the_category_section() throws IOException, InterruptedException {
 		
 		objectMethod();
-		tbtp.scrollForCategory();
+		Utility.scrollForCategory();
 		tbtp.clickonCategory();
 		Utility.implicitWait();
 		logger.log(Status.INFO, "Step8 is executed");
 	
 	    
 	}
-	@Then("User click on specfic checkbox")
+	@When("User click on specfic checkbox")
 	public void user_click_on_specfic_checkbox() throws IOException {
 		
 		objectMethod();
@@ -199,7 +199,7 @@ public class LabTestPage1 extends Utility {
 		logger.log(Status.INFO, "Step9 is executed");
    
 	}
-	@Then("User click on done button")
+	@When("User click on done button")
 	public void user_click_on_done_button() throws IOException, InterruptedException {
 		
 		Utility.implicitWait();
@@ -219,7 +219,7 @@ public class LabTestPage1 extends Utility {
 		
 	    
 	}
-	@Then("User click on the Add to cart")
+	@When("User click on the Add to cart")
 	public void user_click_on_the_add_to_cart() throws IOException, InterruptedException {
 		
  		Utility.implicitWait();
@@ -232,7 +232,7 @@ public class LabTestPage1 extends Utility {
 		
 	    
 	}
-	@Then("User click on view details")
+	@When("User click on view details")
 	public void user_click_on_view_details() throws IOException, InterruptedException {
 		
 		Utility.implicitWait();
@@ -245,8 +245,24 @@ public class LabTestPage1 extends Utility {
 	public void it_shows_the_list_of_selected_tests() throws Exception {
 		
 		
+		String actualtitle = tbtp.validateTopBookTitle();
+		String expectedtitle = "Top Tests to Manage Your Health at the Best Prices from Apollo 24|7"; 
+		try {
+
+			logger.log(Status.INFO, "Step14 is executed");
+
+			assertEquals(actualtitle, expectedtitle);
+			logger.log(Status.PASS, "Test is passed");
+			System.out.println("Actual text : " + actualtitle);
+			assert true;
+		} catch (AssertionError e) {
+			e.printStackTrace();
+			logger.log(Status.FAIL, "Test is failed");
+			captureScreenshotOnFailure();
+			assert false;
+		};
+		
 		tbtp.captureScreenshot();
-		logger.log(Status.INFO, "Step14 is executed");
 		
 	    
 	}

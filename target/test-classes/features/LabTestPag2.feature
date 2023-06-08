@@ -10,6 +10,7 @@ Feature: Lab-Tests
 		   Examples:
 		     |Search|
 		     |RBC		|
+		     |CBC   |
 		     
 		     
 
@@ -24,4 +25,5 @@ Feature: Lab-Tests
 		   Examples:
 		     |Search|
 		     |@@@@@ |
+		     |AZECX	|
 		     

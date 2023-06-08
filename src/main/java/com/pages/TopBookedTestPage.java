@@ -1,15 +1,9 @@
 package com.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
-
 import java.io.IOException;
-
-
 import org.openqa.selenium.support.PageFactory;
-
 import com.utility.Utility;
-import org.openqa.selenium.JavascriptExecutor;
 public class TopBookedTestPage extends Utility {
 	
 	public TopBookedTestPage() throws IOException
@@ -19,7 +13,7 @@ public class TopBookedTestPage extends Utility {
 	} 
 	
 	
-	//X-path for category button
+	   //X-path for category button
 		@FindBy(xpath="//span[normalize-space()='Category']")
 		private WebElement category;
 		
@@ -28,7 +22,6 @@ public class TopBookedTestPage extends Utility {
 		private WebElement bloodStudies;
 		
 		//X-path of Done button
-		
 		@FindBy(xpath="(//span[text()='DONE'])[2]")
 		private WebElement Done;
 		
@@ -45,7 +38,8 @@ public class TopBookedTestPage extends Utility {
 		@FindBy(xpath="//span[text()='View Details']")
 		private WebElement View;
 		
-		//Method for validating  Tile of page
+		//Method for validating  Tite of page
+		
 		public String validateTopBookTitle()
 		{
 			return driver.getTitle(); 
@@ -63,13 +57,7 @@ public class TopBookedTestPage extends Utility {
 			bloodStudies.click();
 		}
 		
-		//Method for Click on done button
-		public void clickOnDone()
-		{
-			Done.click();
-		}
-		
-		//Method for clicl on Add to Cart
+		//Method for click on Add to Cart
 		public void clickOnAddToCart()
 		{
 			AddToCart.click();
@@ -80,16 +68,13 @@ public class TopBookedTestPage extends Utility {
 			AddToCart2.click();
 		}
 		
-		public void scrollForCategory() {
-
-	        JavascriptExecutor js = (JavascriptExecutor) driver;
-
-	        js.executeScript("window.scrollTo(0,180)");
-
-	    }
+		//Method for Click on done button
+		public void clickOnDone()
+		{
+			Done.click();
+		}
 		
-		
-		
+		//Click on view 
 		public void ClickOnView()
 		{
 			View.click();

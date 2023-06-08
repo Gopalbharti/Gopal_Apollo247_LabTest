@@ -25,32 +25,33 @@ public class LabTestPage2 extends Utility{
 	
 
 	@Given("Chrome is opened and  Apollo247 app is opened")
-	public void chrome_is_opened_and_apollo247_app_is_opened() throws IOException, InterruptedException {
-		
+	public void chrome_is_opened_and_apollo247_app_is_opened() throws IOException, InterruptedException 
+	{	
 		objectMethod();
 		Utility.browserMaximize();
-	Utility.implicitWait();
+	    Utility.implicitWait();
 		ldp.notification_close();
 		logger = report.createTest("test02");
 		String actualtitle = ldp.validateLandinPageTitle();
 		System.out.println(actualtitle);
 		//Thread.sleep(7000);
 		logger.log(Status.INFO, "Step1 is executed");
-		
-		
 	}
+	
 	@When("User click on the LAB_TESTS link")
-	public void user_click_on_the_lab_tests_link() throws IOException {
-		
+	public void user_click_on_the_lab_tests_link() throws IOException 
+	{	
 		   Utility.pageLoad();
 		   objectMethod();
 	       ldp.LabTestsPageNavigation();
 	       Utility.implicitWait();
 	       logger.log(Status.INFO, "Step2 is executed");
 	}
+	
+	
 	@Then("User navigate on the LAB-TESTS page")
-	public void user_navigate_on_the_lab_tests_page() throws IOException, InterruptedException {
-	   
+	public void user_navigate_on_the_lab_tests_page() throws IOException, InterruptedException 
+	{   
 		objectMethod();
 		Thread.sleep(4000);
 		String actualtitle = ltp.validateLabTestPageTitle();
@@ -69,6 +70,8 @@ public class LabTestPage2 extends Utility{
 		}
 		
 	}
+	
+	
 	@When("User enters valid Search Test {string}")
 	public void user_enters_valid_search_test(String string) throws IOException, InterruptedException {
 	    
@@ -78,6 +81,8 @@ public class LabTestPage2 extends Utility{
 	    logger.log(Status.INFO, "Step4 is executed");
 		
 	}
+	
+	
 	@Then("It display the list of test available")
 	public void it_display_the_list_of_test_available() throws Exception {
 	   

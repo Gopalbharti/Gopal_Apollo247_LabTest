@@ -1,4 +1,19 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 201.741 sec
+Tests run: 9, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 201.518 s <<< FAILURE! - in TestSuite
+runScenario(testrunner.TestRunner_LabTestPage1)  Time elapsed: 18.424 s  <<< FAILURE!
+java.lang.AssertionError
+
+runScenario(testrunner.TestRunner_LabTestPage2)  Time elapsed: 11.319 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <p>...</p> is not clickable at point (893, 23). Other element would receive the click: <div class="wzrk-overlay"></div>
+  (Session info: chrome=114.0.5735.110)
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [30bbd104e13cc4b55a010bfa3a9073db, clickElement {id=993973DED9B47DA77610945D913E1B3F_element_46}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:64843}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64843/devtoo..., se:cdpVersion: 114.0.5735.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (30bbd104e13cc4b55a010bfa3a9073db)] -> xpath: //*[text()='Lab Tests']]
+Session ID: 30bbd104e13cc4b55a010bfa3a9073db
+

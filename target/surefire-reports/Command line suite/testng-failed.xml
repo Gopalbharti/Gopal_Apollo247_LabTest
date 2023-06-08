@@ -7,9 +7,16 @@
         <methods>
           <include name="setUpClass"/>
           <include name="tearDownClass"/>
-          <include name="runScenario" invocation-numbers="1"/>
+          <include name="runScenario" invocation-numbers="0 1 2 3"/>
         </methods>
       </class> <!-- testrunner.TestRunner_LabTestPage2 -->
+      <class name="testrunner.TestRunner_LabTestPage1">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="0 2"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- testrunner.TestRunner_LabTestPage1 -->
       <class name="testrunner.TestRunner_LabTest_Excel">
         <methods>
           <include name="setUpClass"/>

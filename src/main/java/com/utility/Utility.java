@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.Date;
 import java.util.Properties;
-
+import org.openqa.selenium.JavascriptExecutor;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -80,6 +80,13 @@ public class Utility extends Config {
 	public String validatePageTitle() {
 		return driver.getTitle();
 	}
+	
+	
+	public static void scrollForCategory() 
+	{
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollTo(0,180)");
+    }
 	
 	
 	public static String getDate() {
