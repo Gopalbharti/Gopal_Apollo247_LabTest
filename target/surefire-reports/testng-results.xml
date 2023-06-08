@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-06-07T17:16:44 IST" name="Command line suite" finished-at="2023-06-07T17:20:06 IST" duration-ms="201243">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.TestRunner_LabTestPage1@6497b078]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.TestRunner_LabTestPage2@8317c52]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.TestRunner_LabTest_Excel@76f2bbc1]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-06-07T17:16:44 IST" name="Command line test" finished-at="2023-06-07T17:20:06 IST" duration-ms="201243">
+      <class name="testrunner.TestRunner_LabTestPage2">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testrunner.TestRunner_LabTestPage2@8317c52]" started-at="2023-06-07T17:18:03 IST" name="setUpClass" finished-at="2023-06-07T17:18:03 IST" duration-ms="18" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@9147ba2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.TestRunner_LabTestPage2@8317c52]" started-at="2023-06-07T17:18:03 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-07T17:18:30 IST" duration-ms="27516" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Search functionality with valid Test"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Lab-Tests"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.TestRunner_LabTestPage2@8317c52]" started-at="2023-06-07T17:18:30 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-07T17:19:05 IST" duration-ms="34754" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Search functionality with invalid Test"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Lab-Tests"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testrunner.TestRunner_LabTestPage2@8317c52]" started-at="2023-06-07T17:19:05 IST" name="tearDownClass" finished-at="2023-06-07T17:19:05 IST" duration-ms="20" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testrunner.TestRunner_LabTestPage2 -->
+      <class name="testrunner.TestRunner_LabTestPage1">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testrunner.TestRunner_LabTestPage1@6497b078]" started-at="2023-06-07T17:16:44 IST" name="setUpClass" finished-at="2023-06-07T17:16:45 IST" duration-ms="468" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@9147ba2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.TestRunner_LabTestPage1@6497b078]" started-at="2023-06-07T17:16:45 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-07T17:17:06 IST" duration-ms="21085" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate user navigate on Lab-Tests page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Lab-Tests"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.TestRunner_LabTestPage1@6497b078]" started-at="2023-06-07T17:17:06 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-07T17:17:23 IST" duration-ms="17499" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validte Lab-TESTS page UI"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Lab-Tests"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.TestRunner_LabTestPage1@6497b078]" started-at="2023-06-07T17:17:23 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-07T17:18:03 IST" duration-ms="39075" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate User select LAB-TESTS and view its details"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Lab-Tests"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testrunner.TestRunner_LabTestPage1@6497b078]" started-at="2023-06-07T17:18:03 IST" name="tearDownClass" finished-at="2023-06-07T17:18:03 IST" duration-ms="60" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testrunner.TestRunner_LabTestPage1 -->
+      <class name="testrunner.TestRunner_LabTest_Excel">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testrunner.TestRunner_LabTest_Excel@76f2bbc1]" started-at="2023-06-07T17:19:05 IST" name="setUpClass" finished-at="2023-06-07T17:19:05 IST" duration-ms="15" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@9147ba2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.TestRunner_LabTest_Excel@76f2bbc1]" started-at="2023-06-07T17:19:05 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-07T17:19:32 IST" duration-ms="27482" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Search functionality with valid Test"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Lab-Tests"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.TestRunner_LabTest_Excel@76f2bbc1]" started-at="2023-06-07T17:19:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-07T17:20:06 IST" duration-ms="33193" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Search functionality with valid Test"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Lab-Tests"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testrunner.TestRunner_LabTest_Excel@76f2bbc1]" started-at="2023-06-07T17:20:06 IST" name="tearDownClass" finished-at="2023-06-07T17:20:06 IST" duration-ms="18" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testrunner.TestRunner_LabTest_Excel -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>

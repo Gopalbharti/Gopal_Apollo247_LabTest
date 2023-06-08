@@ -1,0 +1,69 @@
+--------------------------------------------------------------------------------------------------
+Project structure:
+
+src/main/java:
+	com.base:
+		Base.java
+		BaseLoginLogout.java
+		
+	com.pages:
+		RegistrationPage.java
+		LoginPage.java
+		HomePage.java
+		OpenNewAccountPage.java
+			
+	com.utility:
+		Config.java
+		Utility.java
+		
+src/test/java:
+	com.tests:
+		RegistrationPageTest.java
+		LoginPageTest.java
+		HomePageTest.java
+		
+src/main/resources:
+	ReadMe
+						
+src/test/resources:
+	testng.xml	
+
+drivers folder:
+	chromedriver.exe
+	
+screenshots folder:
+	file.png	
+	
+pom.xml			
+--------------------------------------------------------------------------------------------------
+Project creation sequence:
+
+Create maven project
+Add the dependencies in pom.xml
+Maven project will have 4 sections by default(if not then create them):
+	src/main/java
+	src/main/resources
+	src/test/java
+	src/test/resources
+
+Create the required packages, classes, files in them as per below sequence:
+
+Step 1 --> Create Config.java
+Step 2 --> Create Utility.java
+Step 3 --> Create RegistrationPage.java
+Step 4 --> Create LoginPage.java
+Step 5 --> Create HomePage.java
+Step 6 --> Create OpenNewAccountPage.java
+Step 7 --> Create Base.java
+Step 8 --> Create BaseLoginLogout.java
+Step 9 --> Create RegistrationPageTest.java
+Step 10 --> Create LoginPageTest.java
+Step 11 --> Create HomePageTest.java
+Step 12 --> Create testng.xml
+
+Create the drivers folder and keep driver in it
+Create the screenshots folder to keep screenshots in it
+Run the tests by using Test class(individual test class) or testng.xml(all test classes) or pom.xml
+
+See the reports in test-output folder(created by testng)
+See the reports in target folder(created by maven)

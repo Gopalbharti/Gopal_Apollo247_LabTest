@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="50.284" tests="2" skipped="0" failures="0" errors="0">
+<testcase classname="Lab-Tests" name="Verify Search functionality with valid Test - Example #1.1" time="24.921">
+<system-out><![CDATA[
+Given Chrome is opened and  Apollo247 app is opened.........................passed
+When User click on the LAB_TESTS link.......................................passed
+Then User navigate on the LAB-TESTS page....................................passed
+When User enters valid Search Test "<SearchKeyword>"........................passed
+Then It display the list of test available..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Lab-Tests" name="Verify Search functionality with invalid Test - Example #1.1" time="25.133">
+<system-out><![CDATA[
+Given Chrome is opened and  Apollo247 app is opened.........................passed
+When User click on the LAB_TESTS link.......................................passed
+Then User navigate on the LAB-TESTS page....................................passed
+When User enters invalid Search Test "<SearchKeyword>"......................passed
+Then It display the empty list or display message no test avaliable.........passed
+]]></system-out>
+</testcase>
+</testsuite>
